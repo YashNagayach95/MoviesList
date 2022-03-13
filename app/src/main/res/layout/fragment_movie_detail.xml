@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?><!--Using relative layout instead of constraint layout due to time issues-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/poster_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_iv"
+        android:padding="8dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/release_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/release_date"
+        android:layout_margin="@dimen/five"
+        app:layout_constraintLeft_toRightOf="@id/poster_image"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/sixteen"
+        />
+
+    <TextView
+        android:id="@+id/release_date_text_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_margin="@dimen/five"
+        app:layout_constraintLeft_toRightOf="@id/poster_image"
+        app:layout_constraintTop_toBottomOf="@id/release_date_text"
+        android:text="@string/release_date_value"
+        android:textSize="@dimen/twelve" />
+
+
+    <TextView
+        android:id="@+id/rating_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_margin="@dimen/five"
+        android:textSize="@dimen/sixteen"
+        app:layout_constraintLeft_toRightOf="@id/poster_image"
+        app:layout_constraintTop_toBottomOf="@id/release_date_text_value"
+        android:text="@string/rating" />
+
+    <TextView
+        android:id="@+id/rating_text_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_margin="@dimen/five"
+        app:layout_constraintLeft_toRightOf="@id/poster_image"
+        app:layout_constraintTop_toBottomOf="@id/rating_text"
+        android:text="@string/rating_value"
+        android:textSize="@dimen/twelve" />
+
+
+    <TextView
+        android:id="@+id/popularity_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_margin="@dimen/five"
+        app:layout_constraintLeft_toRightOf="@id/poster_image"
+        app:layout_constraintTop_toBottomOf="@id/rating_text_value"
+        android:text="@string/popularity"
+        android:textSize="@dimen/sixteen" />
+
+    <TextView
+        android:id="@+id/popularity_text_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_margin="@dimen/five"
+        app:layout_constraintLeft_toRightOf="@id/poster_image"
+        app:layout_constraintTop_toBottomOf="@id/popularity_text"
+        android:text="@string/popularity_value"
+        android:textSize="@dimen/twelve" />
+
+
+    <TextView
+        android:id="@+id/overview_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_margin="@dimen/five"
+        app:layout_constraintTop_toBottomOf="@id/poster_image"
+        app:layout_constraintStart_toStartOf="@id/poster_image"
+        android:text="@string/overview"
+        android:textSize="@dimen/sixteen" />
+
+    <TextView
+        android:id="@+id/overview_text_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_margin="@dimen/five"
+        app:layout_constraintTop_toBottomOf="@id/overview_text"
+        app:layout_constraintStart_toStartOf="@id/poster_image"
+        android:text="@string/overview_value"
+        android:textSize="@dimen/twelve" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

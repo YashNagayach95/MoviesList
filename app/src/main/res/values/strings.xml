@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title">Title</string>
+    <string name="overview">Overview</string>
+    <string name="hello_blank_fragment">hello first fragment</string>
+    <string name="release_date">Release Date</string>
+    <string name="rating">Rating</string>
+    <string name="rating_value">rating value</string>
+    <string name="popularity">Popularity</string>
+    <string name="popularity_value">popularity value</string>
+    <string name="overview_value">overview value</string>
+    <string name="release_date_value">release date value</string>
+</resources>

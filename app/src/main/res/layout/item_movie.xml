@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><!--Using relative layout instead of constraint layout due to time issues-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/poster_image"
+        android:layout_width="104dp"
+        android:layout_height="75dp"
+        android:background="@drawable/bg_iv"
+        android:padding="8dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+        <TextView
+            android:id="@+id/title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/five"
+            app:layout_constraintLeft_toRightOf="@id/poster_image"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="@dimen/sixteen"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/overview_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_margin="@dimen/five"
+            app:layout_constraintLeft_toRightOf="@id/poster_image"
+            app:layout_constraintTop_toBottomOf="@id/title_textview"
+            android:text="@string/overview"
+            android:textSize="@dimen/twelve" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
